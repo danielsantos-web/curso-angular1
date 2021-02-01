@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
+
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
@@ -31,6 +32,7 @@ export class ProductCreateComponent implements OnInit {
       this.productService.showMessage('Produto Criado')
       this.router.navigate(['/products'])
     })    
+    
   }
 
   cancel(): void{
